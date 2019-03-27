@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url("../images/patt.png") #2c6096;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	background: rgba(255, 255, 255, 0.75);
+	min-height: 100px;
+}
+.container {
+	width: 90%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.logo {
+	float: left;
+	padding-top: 33px;
+	
+}
+
+.menu {
+	
+	padding: 0;
+	margin: 0;
+	padding-left: 123px;
+	float: left;
+	
+
+}
+
+.menu li {
+	float: left;
+	list-style: none;
+	width: 142px;
+	text-align: center;
+	position: relative;
+	padding-top: 26px;
+	height: 50px;
+
+	
+	
+	
+}
+.menu li a {
+	text-decoration: none;
+	font-size: 21px;
+	color: #2c71b8;
+	border-left: 1px solid rgb(44, 113, 184);
+	height: 50px;
+	display: block;
+	padding-top: 13px;
+
+
+}
+
+.menu li:last-child a {
+	border-right: 1px solid rgb(44, 113, 184);
+	
+}
+
+.menu li:nth-child(2) a:after {
+	content: url("../images/checkmark.png");
+	padding-left: 10px;
+	padding-top: 24px;
+}
+
+form[name = "search"] {
+	float: left;
+	padding-left: 30px;
+	padding-top: 30px;
+	position: relative;
+}
+
+input[type = "text"] {
+	outline: none;
+	background: transparent;
+	border: 1px solid rgb(44, 113, 184);
+	width: 200px;
+	height: 40px;
+}
+input[type = "text"]::placeholder {
+	font-size: 21px;
+	color: #2c71b8;
+	font-family: 'Roboto', sans-serif;
+	padding-left: 19px;
+	padding-top: 9px;
+}
+
+form button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 35px;
+	right: 5px;
+	background-color: #2c71b8;
+	border: none;
+
+}
+
+button::before {
+	content: url("../images/magnifier-icon.png");
+}
+
+.shopping-cart {
+	float: left;
+	padding-left: 30px;
+	padding-top: 30px;
+	position: relative;
+}
+.cart {
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.quantity {
+	position: absolute;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	background: rgb(44, 113, 184);
+	top: 20px;
+	left: 20px;
+	text-align: center;
+}
+#product-quantity {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.container:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+
