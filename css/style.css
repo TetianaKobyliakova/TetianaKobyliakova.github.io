@@ -184,7 +184,272 @@ form button {
 
 }
 
+.slider {
+	height: 400px;
+	border-bottom: 1px solid white;
+}
+
+aside, section {
+	float: left;
+	
+}
+
+aside {
+	width: 23%;
+	border-right: 1px solid white;
+}
+section {
+	width: 77%;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 48px;
+	color: white;
+	margin-top: 70px;
+	margin-bottom: 60px;
+	padding-left: 20px;
+}
+
+.col-30 {
+	float: left;
+	width: 30%;
+	margin-left: 30px;
+	border: 1px solid white;
+
+}
+
+.image {
+	height: 180px;
+	width: 270px;
+	background-color: rgb(202, 219, 237);
+	opacity: 0.75; 
+	position: relative;
+	
+}
+.image:after{
+content:"";
+position:absolute;
+border-top:1px solid white;
+  width:324px;
+  transform: rotate(33.5deg);
+  transform-origin: 0% 0%;
+
+}
+
+.image:before{
+content:"";
+position:absolute;
+border-top:1px solid white;
+  width:324px;
+  transform: rotate(146.5deg);
+  transform-origin: 0% 0%;
+  left: 270px;
+
+}
+
+.square {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgb(84, 140, 197);
+	top: 10px;
+	right: 10px;
+	background-image: url(../images/square.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.like {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgb(84, 140, 197);
+	top: 50px;
+	right: 10px;
+	background-image: url(../images/heart.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.monitor {
+	background-image: url(../images/monitor.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.cellphone {
+	background-image: url(../images/cellphone.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.watch {
+	background-image: url(../images/watch.png);
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.laptop {
+	background-image: url(../images/laptop.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.ipad {
+	background-image: url(../images/ipad.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.smartphone1 {
+	background-image: url(../images/smartphone1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.smartphone2 {
+	background-image: url(../images/smartphone2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* .image img {
+	
+	position: absolute;             
+    top:50%;
+	left:25%;
+	transform:translate(0%,-50%);
+} */
+.row1:after, .row2:after, .row3:after, .row4:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.row1, .row2 {
+	margin-bottom: 30px;
+}
+.description {
+	background-color: rgba(44, 113, 184, 0.75);
+	padding: 15px;
+	line-height: 1.5em;
+}
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 20px;
+}
+.text {
+	color: white;
+	font-size: 21px;
+	margin-bottom: 20px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.price {
+	color: white;
+	font-weight: bold;
+	font-size: 48px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.super {
+	vertical-align: super;
+	font-size: 30px;
+}
+
+.more-details {
+	width: 212px;
+	height: 52px;
+	border: 1px solid white;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	font-size: 21px;
+	padding-left: 32px;
+	padding-top: 14px;
+	cursor: pointer;
+}
+
+.add-to-cart {
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 212px;
+	height: 52px;
+	border: 1px solid white;
+	margin-left: 15px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	font-size: 21px;
+	text-align: left;
+	padding-left: 20px;
+	background-image: url(../images/white-shopping-cart.png);
+	background-repeat: no-repeat;
+	background-position: 180px 16px;
+	cursor: pointer;
+
+}
+
+
+.footer {
+	background-color: white;
+	opacity: 0.75;
+	text-align: center;
+	font-size: 21px;
+	color: #548cc5;
+	padding: 40px;
+}
+
+.load-more {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 90px;
+}
+
+.load-more a {
+	text-decoration: none;
+	color: white;
+	font-size: 36px;
+}
+
+
+.title, .custom-select {
+	float: left;
+}
+
+.title {
+	width: 70%;
+}
+
+.custom-select {
+	width: 30%;
+	margin-top: 62px;
+	position: relative;
+}
 
 
 
-
+select {
+	width: 100%;
+	border: 1px solid white;
+	
+	color: white;
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+  	font-size: 21px;
+  	height: 40px;
+    padding-left: 20px;
+     -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;    
+    background: url(../images/small-arrow.png) 96% / 4% no-repeat #2c71b8;   
+   
+}
