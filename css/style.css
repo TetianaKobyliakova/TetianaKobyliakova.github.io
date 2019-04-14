@@ -197,6 +197,7 @@ aside, section {
 aside {
 	width: 23%;
 	border-right: 1px solid white;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 section {
 	width: 77%;
@@ -260,6 +261,11 @@ border-top:1px solid white;
 	background-position: center;
 }
 
+.square:hover {
+	background-color: #2c71b8;
+	background-image: url(../images/white-square2.png);
+}
+
 .like {
 	position: absolute;
 	width: 30px;
@@ -269,7 +275,12 @@ border-top:1px solid white;
 	right: 10px;
 	background-image: url(../images/heart.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center; 
+}
+
+.like:hover {
+	background-color: #2c71b8;
+	background-image: url(../images/white-heart.png);
 }
 
 .monitor {
@@ -374,9 +385,12 @@ h2 {
 	color: white;
 	font-weight: bold;
 	font-size: 21px;
-	padding-left: 32px;
-	padding-top: 14px;
+	background-color: #2c71b8;
 	cursor: pointer;
+}
+
+.more-details:hover {
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .add-to-cart {
@@ -396,6 +410,10 @@ h2 {
 	background-position: 180px 16px;
 	cursor: pointer;
 
+}
+
+.add-to-cart:hover {
+	background-color: #2c71b8;
 }
 
 
@@ -453,3 +471,74 @@ select {
     background: url(../images/small-arrow.png) 96% / 4% no-repeat #2c71b8;   
    
 }
+
+.filter {
+	margin-top: 33px;
+	margin-left: 30px;
+}
+
+h3 {
+	margin-bottom: 25px;
+	font-size: 21px;
+	font-weight: bold;
+	color: white;
+}
+
+input[type = "checkbox"] {
+			display: none;
+		}
+		label {
+			position: relative;
+			font-size: 21px;
+			color: white;
+
+		}
+		label:before {
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border: 1px solid white;
+			margin-right: 10px;
+		}
+		input[type = "checkbox"]:checked + label:before {
+			background-color: white;
+		}
+
+		.checkbox {
+			margin-bottom: 25px;
+		}
+
+		.device-type, .color {
+			margin-bottom: 65px;
+		}
+		
+		.show-more-options {
+			margin-top: 30px;
+
+		}
+		.show-more-options a {
+			font-size: 21px;
+			color: white;
+			text-decoration: none;
+		}
+
+		input[type = "submit"] {
+			display: block;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			background-color: #2c71b8;
+			width: 210px;
+			height: 50px;
+			outline: none;
+			border: 1px solid white;
+			font-size: 21px;
+			font-weight: bold;
+			color: white;
+			cursor: pointer;
+		}
+
+		input[type = "submit"]:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
