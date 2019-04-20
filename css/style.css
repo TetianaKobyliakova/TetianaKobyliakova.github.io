@@ -207,7 +207,7 @@ h1 {
 	font-weight: bold;
 	font-size: 48px;
 	color: white;
-	margin-top: 70px;
+	margin-top: 20px;
 	margin-bottom: 60px;
 	padding-left: 20px;
 }
@@ -332,13 +332,9 @@ border-top:1px solid white;
 	left:25%;
 	transform:translate(0%,-50%);
 } */
-.row1:after, .row2:after, .row3:after, .row4:after {
-	content: "";
-	display: block;
-	clear: both;
-}
 
-.row1, .row2 {
+
+.row1 {
 	margin-bottom: 30px;
 }
 .description {
@@ -449,7 +445,7 @@ h2 {
 
 .custom-select {
 	width: 30%;
-	margin-top: 62px;
+	margin-top: 22px;
 	position: relative;
 }
 
@@ -540,5 +536,25 @@ input[type = "checkbox"] {
 
 		input[type = "submit"]:hover {
 			background-color: rgba(255, 255, 255, 0.2);
+		}
+
+
+		.like-on {
+			background-color: #2c71b8;
+			background-image: url(../images/white-heart.png);
+
+		}
+
+		.path {
+			margin-top: 28px;
+			margin-left: 30px;
+		}
+		.first, .second, .third {
+			font-size: 14px;
+			color: white;
+			opacity: 0.5;
+		}
+		.third {
+			text-decoration: underline;
 		}
 
